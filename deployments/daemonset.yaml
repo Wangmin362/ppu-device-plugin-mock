@@ -36,6 +36,7 @@ spec:
               fieldPath: spec.nodeName
         securityContext:
           privileged: true
+          readOnlyRootFilesystem: false
         volumeMounts:
         - name: device-plugins
           mountPath: /var/lib/kubelet/device-plugins
