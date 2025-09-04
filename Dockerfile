@@ -8,7 +8,8 @@ RUN apk add --no-cache git ca-certificates
 WORKDIR /app
 
 # 复制go模块文件
-COPY go.mod go.sum ./
+COPY go.mod ./
+COPY go.sum ./
 
 # 下载依赖
 RUN go mod download
