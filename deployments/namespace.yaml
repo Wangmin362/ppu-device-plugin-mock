@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: ppu-system
-  labels:
-    name: ppu-system
