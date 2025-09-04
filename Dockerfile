@@ -1,9 +1,6 @@
 # 构建阶段
 FROM golang:1.25-alpine AS builder
 
-# 安装必要的包
-RUN apk add --no-cache git ca-certificates
-
 # 设置工作目录
 WORKDIR /app
 
@@ -12,6 +9,7 @@ COPY go.mod ./
 COPY go.sum ./
 
 # 下载依赖
+RUN go env -w GOPROXY=https://goproxy.cn,direct
 RUN go mod download
 
 # 复制源代码
