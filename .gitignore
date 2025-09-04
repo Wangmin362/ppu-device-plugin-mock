@@ -1,1 +1,52 @@
-.idea
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Go test files
+*.test
+*.out
+
+# Go coverage files
+*.cover
+*.coverprofile
+
+# Go modules
+go.sum
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker
+.docker/
+
+# Kubernetes
+*.kubeconfig
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Build artifacts
+ppu-device-plugin
+ppu-device-plugin.exe
